@@ -1,0 +1,118 @@
+* {
+  font-family: "Onest", sans-serif;
+  color: white;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(img/netflix-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+#nav_container {
+  display: block;
+  position: fixed;
+  width: 100%;
+}
+#nav_container ul {
+  display: flex;
+  list-style: none;
+}
+#logo_section {
+  left: 60px;
+  position: relative;
+  float: left;
+  top: 30px;
+}
+
+#header_buttons {
+  float: right;
+  position: relative;
+  right: 25px;
+  font-size: 16px;
+}
+
+.sing-in-btn{
+    border-radius: 4px;
+    background-color: red;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-top: 17px;
+    display: block;
+}
+.netflix-logo {
+  width: 150px;
+  margin: 0;
+}
+#lang{
+    background-color: transparent;
+    margin-top: 12px;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+option{
+    background-color: rgba(113, 113, 113, 0.511);
+}
+header{
+margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+header h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+header h2 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+header p {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+}
+#fieldset-registration{
+    border: transparent;
+   display: block;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+#emaile-input{
+    padding: 30px;
+    padding-right: 150px;
+    font-size: 18px;
+   
+}
+#submit-btn{
+    border: transparent;
+    padding: 26px;
+    font-size: 25px;
+    background-color: red;
+   
+    font-weight: 500;
+}
+
+footer {
+    background-color: #cb0000;
+    grid-area: footer;
+    margin-bottom: 0;
+    height: 100px;
+}
