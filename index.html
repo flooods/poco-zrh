@@ -1,36 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
-        }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100;300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netflix demo</title>
 
-        .left {
-            margin-top: 20px; 
-        }
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav_container">
+      <div id="logo_section">
+        <a href="#">
+          <img
+            src="img/netflix-logo.svg"
+            class="netflix-logo"
+            alt="Netflix logo"
+        /></a>
+      </div>
 
-        .near {
-            margin-top: 20px; 
-            margin-right: 10px; 
-        }
-
-        
-        .right {
-            margin-top: 20px; 
-            margin-right: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="left">Netflix</div>
-    <div class="near">English</div>
-    <div class="right">Sign in</div>
-</body>
+      <div id="header_buttons">
+        <ul>
+          <li>
+            <select name="lang" id="lang">
+              <option value="de">German</option>
+              <option selected value="en">English</option>
+              <option value="ch">Chinese</option>
+            </select>
+          </li>
+          <li>
+            <a href="#" class="sing-in-btn">Sing in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <form action="signup/" name="main-page" method="post">
+        <h1>
+          Unlimited movies, TV <br />
+          shows, and more.
+        </h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <fieldset name="register-now" id="fieldset-registration">
+          <input
+            type="email"
+            name="email"
+            id="emaile-input"
+            placeholder="Email adress"
+          />
+          <button type="submit" id="submit-btn">Get Started ></button>
+        </fieldset>
+      </form>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
